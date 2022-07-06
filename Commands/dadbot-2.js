@@ -9,6 +9,6 @@ targetString = "FriendUN" <- Zinger Target, This is case sensitive
 zingString = "Message" <- Message to add after the "I am NightBot."
  */
 
- if(!%(user) == 'Lenni') {
+ if(!$(user) == 'Lenni') {
 $(eval tgtStg="FriendUN"; zStg=" And You Can Not Stop Me"; oStg="Hi, "; qStg=(decodeURIComponent("$(querystring $(query))") || decodeURIComponent("$(querystring $(user))")).split(" "); nbStg=", I am NightBot…Now learn to use proper punctuation!"; meStg = "$(user)"; try{tLStg=oStg+qStg[0]+nbStg; if(meStg == tgtStg){tLStg=tLStg+zStg}; tLStg;}catch{`@admin DadBot Broke`})
  }
